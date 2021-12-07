@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="info.js"></script>
+    <title>Vipanjot Kaur</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Information Form</h1>
+        </div>
+    </header>
+    <div class="main-container">
+        <nav id="Two">
+            <h2>Menu</h2>
+        
+           <li> <a href="honesty.html">Honesty Page</a></li>
+            <li><a href="info.html">Information Form Page</a></li>
+            <li><a href="reflection.html">Reflection Page</a></li>
+            
+       </nav>
+   
+
+    <div class="mid">
+        <h1>Information Form</h1>
+        <form id="signup" name="signup" method="post" action="https://httpbin.org/post" onsubmit="return validationForm()">
+
+            <h3> Full Name Info</h3>
+            <label for="firstname">First Name: </label><br>
+            <input type="text" id="firstname" name="firstname"  required  /><br>
+            <label for="lastname">Last Name: </label><br>
+            <input type="text" id="lastname" name="lastname" required  /><br>
+
+            <h3>Username and Password Information</h3>
+            <label for="password">Password: </label><br>
+            <input type="password" id="password" name="password" required /><br>
+            <label for="PasswordConfirmation">Confirm Password: </label><br>
+            <input type="password" id="PasswordConfirmation" name="PasswordConfirmation" required  /><br>
+            <label for="username">Username: </label><br>
+            <input type="text" name="username" id="username" required  /><br>
+
+            <h3>Education Info</h3>
+            <label for="Educationstatus">Education Status: </label><br>
+            <input type="radio" name="Educationstatus" value="Graduated" required  />
+            Graduated
+            <input type="radio" name="Educationstatus" value="Current enrolled"  />
+            Current enrolled
+            <input type="radio" name="Educationstatus" value="Did not graduate" /> Did not graduate<br>
+
+            <h3>Contact Info</h3>
+            <label for="email">Email: </label><br>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/> <br>
+
+            <h3>Age</h3>
+            <label for="age">Age: </label><br>
+            <input type="text" name="age" id="age" required  /><br>
+
+            <input type="hidden" name="lastName" id="lastName" value="Kaur" />
+            <input type="hidden" name="studentId" id="studentId" value="153236203" />
+            <br>
+            <input type="submit" value="Submit" id="btn">
+                <input type="reset" value="Reset" id="btn">
+                
+                <div id="error"></div>
+        </form>
+    </div>
+    <div class="side">
+        <h2>Errors</h2>
+        <p id="err"></p>
+        <p id="err1"></p>
+        <p id="err2"></p>
+        <p id="err3"></p>
+        <p id="err4"></p>
+        <p id="err5"></p>
+    </div>
+    
+    <footer>
+        <div class="bottom">
+            &copy; Copyright 2021 Vipanjot Kaur
+            <br>
+            <a href="info.html">djkje@example.com</a>
+        </div>
+    </footer>   
+</div>
+</body>
+
+</html>
