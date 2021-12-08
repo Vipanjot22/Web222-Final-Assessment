@@ -1,22 +1,21 @@
 function validationForm() {
-    validatepasswrd();
-    validateuserName();
-    validatefirstName();
-    validatelastName();
-    validateConfirmPass();
-    validateAge();
+  validatepasswrd();
+  validateuserName();
+  validatefirstName();
+  validatelastName();
+  validateConfirmPass();
+  validateAge();
 
   if (validatepasswrd() && validateuserName() && validatefirstName() && validatelastName() && validateConfirmPass()
-   && validateAge()) {
+    && validateAge()) {
     alert("Form is submitted successfully");
-     return true;
-   
-  }
+    return true;
+}
   else {
     return false
   }
-}
-
+} 
+// This function validates that the firstname should start with capital letter and only alphabets are allowed.
 function validatefirstName() {
   var first_name = document.getElementById("firstname").value;
   var letters = /^[A-Za-z]+$/;
@@ -29,6 +28,7 @@ function validatefirstName() {
   return false;
 }
 
+// This function validates that the laststname should start with capital letter and only alphabets are allowed.
 function validatelastName() {
   var last_name = document.getElementById("lastname").value;
   var letters = /^[A-Za-z]+$/;
@@ -41,6 +41,8 @@ function validatelastName() {
   return false;
 }
 
+//This function validates that the password must be at least 6 characters long, must start with an alphabet,
+// must have at least 1 digit and 1 uppercase. The password strings must match.
 function validatepasswrd() {
   var psswrd = document.getElementById("password").value;
   let regex = /[a-zA-Z]+[0-9]+/i;
@@ -52,6 +54,8 @@ function validatepasswrd() {
     document.getElementById("err2").innerHTML = "Please enter valid password";
   return false;
 }
+
+//This Function validates that confirm password field must match with the already filled password.
 function validateConfirmPass() {
   var psswrd = document.getElementById("password").value;
   var psswrd2 = document.getElementById("PasswordConfirmation").value;
@@ -65,6 +69,7 @@ function validateConfirmPass() {
   }
 }
 
+//This function validates that the username must start with an alphabet, must have at least 6 characters.
 function validateuserName() {
   var usrname = document.getElementById("username").value;
   if (usrname.length >= 6 && usrname.charAt(0).match('[A-Za-z]')) {
@@ -77,6 +82,7 @@ function validateuserName() {
   }
 }
 
+//This function validates that the age should be between 18 and 60.
 function validateAge() {
   var age = document.getElementById('age').value;
   if (age < 18 || age > 60) {
