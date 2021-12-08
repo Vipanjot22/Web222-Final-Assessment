@@ -58,12 +58,12 @@ nav ul a:visited{
 }
 .side {
     border: 2px black solid;
-    width: 21.9%;
     height: 500px;
-    display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
+    display: inline-block;
     padding: 20px;
+    width: 21.9%;
     background:rgb(154, 224, 186);
     border-radius: 20px;
 }

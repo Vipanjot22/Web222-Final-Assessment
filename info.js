@@ -18,8 +18,8 @@ function validationForm() {
 // This function validates that the firstname should start with capital letter and only alphabets are allowed.
 function validatefirstName() {
   var first_name = document.getElementById("firstname").value;
-  var letters = /^[A-Za-z]+$/;
-  if (first_name.match(letters) && first_name.charAt(0) == first_name.charAt(0).toUpperCase()) {
+  var alphabets = /^[A-Za-z]+$/;
+  if (first_name.match(alphabets) && first_name.charAt(0) == first_name.charAt(0).toUpperCase()) {
     document.getElementById("err").innerHTML = " ";
     return true;
   }
@@ -45,8 +45,8 @@ function validatelastName() {
 // must have at least 1 digit and 1 uppercase. The password strings must match.
 function validatepasswrd() {
   var psswrd = document.getElementById("password").value;
-  let regex = /[a-zA-Z]+[0-9]+/i;
-  if (psswrd.length >= 6 && psswrd.match(regex)) {
+  let regexp = /[a-zA-Z]+[0-9]+/i;
+  if (psswrd.length >= 6 && psswrd.match(regexp)) {
     document.getElementById("err2").innerHTML = " ";
     return true;
   }
