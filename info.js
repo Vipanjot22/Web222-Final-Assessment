@@ -10,11 +10,11 @@ function validationForm() {
     && validateAge()) {
     alert("Form is submitted successfully");
     return true;
-}
+  }
   else {
     return false
   }
-} 
+}
 // This function validates that the firstname should start with capital letter and only alphabets are allowed.
 function validatefirstName() {
   var first_name = document.getElementById("firstname").value;

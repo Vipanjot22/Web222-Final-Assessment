@@ -32,7 +32,7 @@ header {
 nav {
     border: 2px black solid;
     width: 20%;
-    height: 700px;
+    height: 850px;
     display: inline-block;
     vertical-align: top;
     padding: 16px;
@@ -50,7 +50,7 @@ nav {
     box-sizing: border-box;
     border-radius: 20px;
     width: 79%;
-    height: 700px;
+    height: 850px;
 }
 footer {
 border: 2px  red solid;
